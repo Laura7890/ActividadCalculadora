@@ -10,11 +10,12 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import kotlinx.coroutines.internal.ConcurrentLinkedListKt;
+
 
 public class CalculadoraActivity2 extends AppCompatActivity {
 
@@ -61,7 +62,7 @@ public class CalculadoraActivity2 extends AppCompatActivity {
 
                     Intent i = new  Intent(getApplicationContext(), ResultadoActivity2.class);
                     i.putExtra("numero1", n1.getText().toString());
-                    i.putExtra("numero1",n2.getText().toString());
+                    i.putExtra("numero2",n2.getText().toString());
                     i.putExtra("operacion",operacion);
                     startActivity(i);
                     finish();

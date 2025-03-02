@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
+    android:gravity="center"
     tools:context=".CalculadoraActivity2">
 
     <androidx.cardview.widget.CardView
@@ -28,11 +28,12 @@
                 android:layout_height="wrap_content"/>
             <EditText
                 android:id="@+id/numero2"
-                android:hint="Numero :"
+                android:hint="Numero 2:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioGroup
+                android:id="@+id/radioGroupOperaciones"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <RadioButton
@@ -41,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <RadioButton
-                    android:id="@+id/OpRestar"
+                    android:id="@+id/opRestar"
                     android:text="RESTA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>

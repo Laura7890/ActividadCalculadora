@@ -38,24 +38,28 @@ public class ResultadoActivity2 extends AppCompatActivity {
 
         //Evaluar la operacion
 
-        switch (_op){
+        switch (_op.toLowerCase()){
             case "suma":
                 resultado = _n1 + _n2;
                 break;
-            case "Resta":
+            case "resta":
                 resultado = _n1 - _n2;
                 break;
-            case "Multiplicación":
+            case "multiplicacion":
                 resultado = _n1 * _n2;
                 break;
-            case "Division":
+            case "division":
                 resultado = _n1 / _n2;
+                break;
+
+            default:
+                resultado=0;
                 break;
         }
 
         //Display o mostrar
-        rnumero1.setText(String.valueOf(_n1));
-        rnumero2.setText(String.valueOf(_n2));
+        rnumero1.setText("Número 1:"+_n1);
+        rnumero2.setText("Número 2:"+_n2);
         rOperacion.setText(_op+"");
         rResultado.setText(String.valueOf(resultado));
 

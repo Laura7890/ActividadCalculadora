@@ -34,7 +34,7 @@ public class CalculadoraActivity2 extends AppCompatActivity {
         n2 = findViewById(R.id.numero2);
 
         opSuma= findViewById(R.id.opSuma);
-        opRestar= findViewById(R.id.OpRestar);
+        opRestar= findViewById(R.id.opRestar);
         opMulti= findViewById(R.id.opMulti);
         opDivision= findViewById(R.id.opDivision);
 
@@ -54,11 +54,11 @@ public class CalculadoraActivity2 extends AppCompatActivity {
                 if(opSuma.isChecked())
                     operacion = "suma";
                 if(opRestar.isChecked())
-                        operacion = "Resta";
+                        operacion = "resta";
                 if(opMulti.isChecked())
-                        operacion = "Multiplicación";
+                        operacion = "multiplicacion";
                 if(opSuma.isChecked())
-                        operacion = "Division";
+                        operacion = "division";
 
                     Intent i = new  Intent(getApplicationContext(), ResultadoActivity2.class);
                     i.putExtra("numero1", n1.getText().toString());

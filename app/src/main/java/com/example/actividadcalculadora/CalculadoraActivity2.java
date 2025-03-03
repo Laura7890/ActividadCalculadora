@@ -57,7 +57,7 @@ public class CalculadoraActivity2 extends AppCompatActivity {
                         operacion = "resta";
                 if(opMulti.isChecked())
                         operacion = "multiplicacion";
-                if(opSuma.isChecked())
+                if(opDivision.isChecked())
                         operacion = "division";
 
                     Intent i = new  Intent(getApplicationContext(), ResultadoActivity2.class);
